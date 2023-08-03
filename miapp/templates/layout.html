@@ -1,0 +1,75 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+ 
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+    
+        {%block title%}
+        Sitio Web con Django
+        {%endblock%}
+    
+    
+    </title>
+  
+    
+    <link rel="stylesheet" href="{%static 'css/styles.css'%}" />
+  </head>
+  <body>
+    <header> 
+      <div id="logotipo">     
+        <img src="{%static 'images/logo.png'%}" alt="Logo"/>
+        <h1> SITIO WEB CON DJANGO </h1>
+      </div>
+    </header>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="/index"> Inicio </a>
+        </li>
+        <li>
+          <a href="/pagina2"> Pagina 2 </a>
+        </li>
+        <li>
+          <a href="/pagina3"> Pagina 3 </a>
+        </li>
+        <li>
+          <a href="/contacto"> contacto </a>
+        </li>
+      </ul>
+      <hr />
+
+
+    </nav>
+  
+   
+  
+
+    <div id="content">
+      
+        
+      <div class="box">
+
+        <h2 class="title"> Titulo de Prueba</h2>
+        {%block content%}
+        <strong> Inicio </strong>
+        {%endblock%}
+
+      </div>
+          
+        
+    </div>
+   
+
+    
+
+    <footer>
+        Curso de DJANGO &COPY; JUAN VALDEZ
+    </footer> 
+
+  </body>
+</html>
