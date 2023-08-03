@@ -55,7 +55,13 @@ def index(request):
         year += 1
         
     html += "</ul>"
-    return render(request, 'index.html')
+    return render(request, 'index.html', {
+        
+        'mi_variable':'soy un dato que está en la vista'
+        
+        }')
+
+
 
     #HttpResponse(layout+html)
 
